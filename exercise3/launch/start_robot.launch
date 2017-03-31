@@ -1,0 +1,12 @@
+<launch>
+
+  <!-- This is how to launch a launch file from inside another launch file -->
+  <!-- Ze znane kalibracije: kili - 0.967173,   -->
+
+  <include file="$(find turtlebot_bringup)/launch/minimal.launch">
+  </include>
+
+  <param name="/turtlebot_node/odom_angular_scale_correction" value="0.967173" />
+
+</launch>
+
